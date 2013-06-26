@@ -3,8 +3,8 @@
 *.sdf
 *.suo
 *.tss
-/src/Debug
-/src/Release
-/src/ipch
-/src/SSYLib/Release
-/src/SSYLib/Debug
+src/Debug*
+src/Release*
+src/ipch*
+src/SSYLib/Release*
+src/SSYLib/Debug*
