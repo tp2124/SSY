@@ -1,26 +1,12 @@
-﻿Build started 6/25/2013 10:04:41 PM.
-     1>Project "D:\SwurvSwagYolo\src\SSYLib\ssyLib.vcxproj" on node 2 (rebuild target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\ssyLib.lastbuildstate".
-       InitializeBuildStatus:
+﻿Build started 6/25/2013 11:44:04 PM.
+     1>Project "D:\SwirvSwagYolo\src\SSYLib\ssyLib.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
          Touching "Debug\ssyLib.unsuccessfulbuild".
        ClCompile:
-         d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _WINDLL /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Components\Controller\SSYControllerComponent.cpp Components\Objects\SSYGOComponent.cpp Components\Objects\SSYGraphicsComponent.cpp Components\SSYComponent.cpp Events\Types\SSYAssetEvent.cpp Events\Types\SSYBaseEvent.cpp Events\Types\SSYDefaultEvent.cpp Events\Types\World\Graphics\SSYGraphicsWorldEvent.cpp GO\SSYGO.cpp Managers\SSYGOManager.cpp Managers\SSYGraphicsManager.cpp Sys\dbg_assert.cpp
-         dbg_assert.cpp
+         d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _WINDLL /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Managers\SSYGraphicsManager.cpp
          SSYGraphicsManager.cpp
-         SSYGOManager.cpp
-         SSYGO.cpp
-         SSYGraphicsWorldEvent.cpp
-         SSYDefaultEvent.cpp
-         SSYBaseEvent.cpp
-         SSYAssetEvent.cpp
-         SSYComponent.cpp
-         SSYGraphicsComponent.cpp
-         SSYGOComponent.cpp
-         SSYControllerComponent.cpp
-         Generating Code...
        Link:
-         d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\SwurvSwagYolo\src\Debug\ssyLib.dll" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ssyLib.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\SwurvSwagYolo\src\Debug\ssyLib.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\SwurvSwagYolo\src\Debug\ssyLib.lib" /MACHINE:X86 /DLL Debug\SSYControllerComponent.obj
+         d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\SwirvSwagYolo\src\Debug\ssyLib.dll" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ssyLib.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\SwirvSwagYolo\src\Debug\ssyLib.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\SwirvSwagYolo\src\Debug\ssyLib.lib" /MACHINE:X86 /DLL Debug\SSYControllerComponent.obj
          Debug\SSYGOComponent.obj
          Debug\SSYGraphicsComponent.obj
          Debug\SSYComponent.obj
@@ -39,9 +25,9 @@
      1>SSYGraphicsManager.obj : error LNK2019: unresolved external symbol _glfwOpenWindow referenced in function "public: int __thiscall SSY::SSYGraphicsManager::Setup(void)" (?Setup@SSYGraphicsManager@SSY@@QAEHXZ)
      1>SSYGraphicsManager.obj : error LNK2019: unresolved external symbol _glfwOpenWindowHint referenced in function "public: int __thiscall SSY::SSYGraphicsManager::Setup(void)" (?Setup@SSYGraphicsManager@SSY@@QAEHXZ)
      1>SSYGraphicsManager.obj : error LNK2019: unresolved external symbol _glfwInit referenced in function "public: int __thiscall SSY::SSYGraphicsManager::Setup(void)" (?Setup@SSYGraphicsManager@SSY@@QAEHXZ)
-     1>D:\SwurvSwagYolo\src\Debug\ssyLib.dll : fatal error LNK1120: 7 unresolved externals
-     1>Done Building Project "D:\SwurvSwagYolo\src\SSYLib\ssyLib.vcxproj" (rebuild target(s)) -- FAILED.
+     1>D:\SwirvSwagYolo\src\Debug\ssyLib.dll : fatal error LNK1120: 7 unresolved externals
+     1>Done Building Project "D:\SwirvSwagYolo\src\SSYLib\ssyLib.vcxproj" (build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:00.96
+Time Elapsed 00:00:00.43

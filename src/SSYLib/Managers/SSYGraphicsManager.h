@@ -12,10 +12,10 @@
 #include <d3dx9math.h>
 #else ifdef RENDER_OPENGL
 // Include GLEW
-#include <glew.h>
+#include <GL\glew.h>
 
 // Include GLFW
-#include <glfw.h>
+#include <GL\glfw.h>
 #endif
 
 namespace SSY
