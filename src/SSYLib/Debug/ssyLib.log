@@ -1,10 +1,22 @@
-﻿Build started 6/25/2013 11:44:04 PM.
+﻿Build started 6/25/2013 11:51:35 PM.
      1>Project "D:\SwirvSwagYolo\src\SSYLib\ssyLib.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Touching "Debug\ssyLib.unsuccessfulbuild".
        ClCompile:
-         d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _WINDLL /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Managers\SSYGraphicsManager.cpp
+         d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _WINDLL /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Components\Controller\SSYControllerComponent.cpp Components\Objects\SSYGOComponent.cpp Components\Objects\SSYGraphicsComponent.cpp Components\SSYComponent.cpp Events\Types\SSYAssetEvent.cpp Events\Types\SSYBaseEvent.cpp Events\Types\SSYDefaultEvent.cpp Events\Types\World\Graphics\SSYGraphicsWorldEvent.cpp GO\SSYGO.cpp Managers\SSYGOManager.cpp Managers\SSYGraphicsManager.cpp Sys\dbg_assert.cpp
+         dbg_assert.cpp
          SSYGraphicsManager.cpp
+         SSYGOManager.cpp
+         SSYGO.cpp
+         SSYGraphicsWorldEvent.cpp
+         SSYDefaultEvent.cpp
+         SSYBaseEvent.cpp
+         SSYAssetEvent.cpp
+         SSYComponent.cpp
+         SSYGraphicsComponent.cpp
+         SSYGOComponent.cpp
+         SSYControllerComponent.cpp
+         Generating Code...
        Link:
          d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\SwirvSwagYolo\src\Debug\ssyLib.dll" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ssyLib.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\SwirvSwagYolo\src\Debug\ssyLib.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\SwirvSwagYolo\src\Debug\ssyLib.lib" /MACHINE:X86 /DLL Debug\SSYControllerComponent.obj
          Debug\SSYGOComponent.obj
@@ -30,4 +42,4 @@
 
 Build FAILED.
 
-Time Elapsed 00:00:00.43
+Time Elapsed 00:00:00.98

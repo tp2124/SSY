@@ -40,8 +40,8 @@
     <IncludePath>$(GL_DIR)\Include\glm-0.9.4.0\;$(GL_DIR)\Include\glfw-2.7.6\include\;$(GL_DIR)\Include\glew-1.9.0\include\;$(GL_DIR)\Include\bullet-2.81-rev2613\;$(GL_DIR)\Include\assimp-3.0.1270\include\;$(GL_DIR)\Include\AntTweakBar-1.16\include\;$(Include);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LibraryPath>$(GL_DIR)\Debug;$(Library);$(LibraryPath)</LibraryPath>
-    <ExecutablePath>$(GL_DIR)\Debug;$(ExecutablePath)</ExecutablePath>
+    <LibraryPath>$(GL_DIR)\bin;$(Library);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(GL_DIR)\bin;$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
