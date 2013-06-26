@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Sys">
+      <UniqueIdentifier>{f6d72b62-40de-4833-adb2-86967ef8da38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Containers">
+      <UniqueIdentifier>{77eb5a5f-ac4d-4982-ab77-f83e4985d1f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{063f7589-4936-4378-8786-dbcb4250dbac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bounding">
+      <UniqueIdentifier>{fd5e0641-6ce4-49b2-be68-5929d25edbaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry">
+      <UniqueIdentifier>{9305f82e-3bfd-4138-826b-e19aa55f48bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{0ffd7918-8f9e-48c9-aa75-a5bed821e2c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{278ff127-211c-477b-9565-3b922a8446e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{eb98adf9-ba47-421f-983d-52ef291827d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{923b768d-b55d-415e-8d7d-daf0605bc56c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GO">
+      <UniqueIdentifier>{2e108754-7728-48c1-9a31-3008eacc0680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events">
+      <UniqueIdentifier>{93023ec9-379a-4214-a165-78e070e0430b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Controller">
+      <UniqueIdentifier>{0d03a26d-27ee-40bb-8767-dba0563ad6f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Objects">
+      <UniqueIdentifier>{1f16ba82-8def-4a9e-a65d-d11f64c0a9f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events\Dispatcher">
+      <UniqueIdentifier>{7e949730-b246-40bf-9ebc-78cfdecf8c59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events\Handles">
+      <UniqueIdentifier>{a434bceb-262b-4293-a88d-74316d2ed317}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events\Types">
+      <UniqueIdentifier>{a4314fbd-f63e-4f76-9320-bc20f086199e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events\Types\World">
+      <UniqueIdentifier>{2aeb4f00-addc-4b5b-bf1b-a07a8274fe0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events\Types\World\Graphics">
+      <UniqueIdentifier>{6fde6ee1-04b7-4075-a489-24d480b0b930}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events\Types\Gameplay">
+      <UniqueIdentifier>{e4052bf9-80d8-4759-8036-1b140f2c1109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events\Types\Object">
+      <UniqueIdentifier>{f000eadb-6750-4808-92f4-352149978d4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdParty">
+      <UniqueIdentifier>{a361adc2-0b81-4e07-bcac-6f7dff6adac8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sys\SSYDefines.h">
+      <Filter>Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\Types\World\Graphics\SSYGraphicsWorldEvent.h">
+      <Filter>Events\Types\World\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\Types\SSYAssetEvent.h">
+      <Filter>Events\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\Types\SSYBaseEvent.h">
+      <Filter>Events\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\Types\SSYDefaultEvent.h">
+      <Filter>Events\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="GO\SSYGO.h">
+      <Filter>GO</Filter>
+    </ClInclude>
+    <ClInclude Include="Managers\SSYGOManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Managers\SSYGraphicsManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\singleton.h">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Controller\SSYControllerComponent.h">
+      <Filter>Components\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Objects\SSYGOComponent.h">
+      <Filter>Components\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Objects\SSYGraphicsComponent.h">
+      <Filter>Components\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\SSYComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Sys\dbg_assert.h">
+      <Filter>Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="Sys\def_dbg.h">
+      <Filter>Sys</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Events\Types\World\Graphics\SSYGraphicsWorldEvent.cpp">
+      <Filter>Events\Types\World\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Types\SSYAssetEvent.cpp">
+      <Filter>Events\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Types\SSYBaseEvent.cpp">
+      <Filter>Events\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Types\SSYDefaultEvent.cpp">
+      <Filter>Events\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="GO\SSYGO.cpp">
+      <Filter>GO</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers\SSYGOManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers\SSYGraphicsManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Controller\SSYControllerComponent.cpp">
+      <Filter>Components\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Objects\SSYGOComponent.cpp">
+      <Filter>Components\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Objects\SSYGraphicsComponent.cpp">
+      <Filter>Components\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\SSYComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Sys\dbg_assert.cpp">
+      <Filter>Sys</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

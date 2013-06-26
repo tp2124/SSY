@@ -1,0 +1,377 @@
+
+    menuItem
+        -label "Extrude" 
+        -divider 0
+        -subMenu 0
+        -tearOff 0
+        -command "PolyExtrude" 
+        -altModifier 0
+        -optionModifier 0
+        -commandModifier 0
+        -ctrlModifier 0
+        -shiftModifier 0
+        -optionBox 0
+        -enable 1
+        -data 0
+        -radialPosition "N" 
+        -allowOptionBoxes 1
+        -postMenuCommandOnce 0
+        -enableCommandRepeat 1
+        -image "polyExtrudeFacet.png" 
+        -echoCommand 0
+        -annotation "Extrude" 
+        -italicized 0
+        -boldFont 1
+        menuEditorMenuItem1;
+
+    menuItem
+        -label "menuEditorMenuItem2" 
+        -divider 0
+        -subMenu 0
+        -tearOff 0
+        -command "PolyExtrudeOptions" 
+        -altModifier 0
+        -optionModifier 0
+        -commandModifier 0
+        -ctrlModifier 0
+        -shiftModifier 0
+        -optionBox 1
+        -enable 1
+        -data 0
+        -allowOptionBoxes 1
+        -postMenuCommandOnce 0
+        -enableCommandRepeat 0
+        -echoCommand 0
+        -annotation "menuEditorMenuItem2" 
+        -italicized 0
+        -boldFont 1
+        menuEditorMenuItem2;
+
+    menuItem
+        -label "Merge" 
+        -divider 0
+        -subMenu 0
+        -tearOff 0
+        -command "PolyMerge" 
+        -altModifier 0
+        -optionModifier 0
+        -commandModifier 0
+        -ctrlModifier 0
+        -shiftModifier 0
+        -optionBox 0
+        -enable 1
+        -data 0
+        -radialPosition "S" 
+        -allowOptionBoxes 1
+        -postMenuCommandOnce 0
+        -enableCommandRepeat 1
+        -image "polyMergeVertex.png" 
+        -echoCommand 0
+        -annotation "Merge" 
+        -italicized 0
+        -boldFont 1
+        menuEditorMenuItem3;
+
+    menuItem
+        -label "menuEditorMenuItem4" 
+        -divider 0
+        -subMenu 0
+        -tearOff 0
+        -command "PolyMergeOptions" 
+        -altModifier 0
+        -optionModifier 0
+        -commandModifier 0
+        -ctrlModifier 0
+        -shiftModifier 0
+        -optionBox 1
+        -enable 1
+        -data 0
+        -allowOptionBoxes 1
+        -postMenuCommandOnce 0
+        -enableCommandRepeat 0
+        -echoCommand 0
+        -annotation "menuEditorMenuItem4" 
+        -italicized 0
+        -boldFont 1
+        menuEditorMenuItem4;
+
+    menuItem
+        -label "Sculpt Geometry Tool" 
+        -divider 0
+        -subMenu 0
+        -tearOff 0
+        -command "SculptGeometryTool" 
+        -altModifier 0
+        -optionModifier 0
+        -commandModifier 0
+        -ctrlModifier 0
+        -shiftModifier 0
+        -optionBox 0
+        -enable 1
+        -data 0
+        -radialPosition "W" 
+        -allowOptionBoxes 1
+        -postMenuCommandOnce 0
+        -enableCommandRepeat 1
+        -image "putty.png" 
+        -echoCommand 0
+        -annotation "Sculpt Geometry Tool" 
+        -italicized 0
+        -boldFont 1
+        menuEditorMenuItem5;
+
+    menuItem
+        -label "menuEditorMenuItem6" 
+        -divider 0
+        -subMenu 0
+        -tearOff 0
+        -command "SculptGeometryToolOptions" 
+        -altModifier 0
+        -optionModifier 0
+        -commandModifier 0
+        -ctrlModifier 0
+        -shiftModifier 0
+        -optionBox 1
+        -enable 1
+        -data 0
+        -allowOptionBoxes 1
+        -postMenuCommandOnce 0
+        -enableCommandRepeat 0
+        -echoCommand 0
+        -annotation "menuEditorMenuItem6" 
+        -italicized 0
+        -boldFont 1
+        menuEditorMenuItem6;
+
+    menuItem
+        -label "Split Polygon Tool" 
+        -divider 0
+        -subMenu 0
+        -tearOff 0
+        -command "SplitPolygonTool" 
+        -altModifier 0
+        -optionModifier 0
+        -commandModifier 0
+        -ctrlModifier 0
+        -shiftModifier 0
+        -optionBox 0
+        -enable 1
+        -data 0
+        -radialPosition "NW" 
+        -allowOptionBoxes 1
+        -postMenuCommandOnce 0
+        -enableCommandRepeat 1
+        -image "polySplitFacet.png" 
+        -echoCommand 0
+        -annotation "Split Polygon Tool" 
+        -italicized 0
+        -boldFont 1
+        menuEditorMenuItem7;
+
+    menuItem
+        -label "menuEditorMenuItem8" 
+        -divider 0
+        -subMenu 0
+        -tearOff 0
+        -command "SplitPolygonToolOptions" 
+        -altModifier 0
+        -optionModifier 0
+        -commandModifier 0
+        -ctrlModifier 0
+        -shiftModifier 0
+        -optionBox 1
+        -enable 1
+        -data 0
+        -allowOptionBoxes 1
+        -postMenuCommandOnce 0
+        -enableCommandRepeat 0
+        -echoCommand 0
+        -annotation "menuEditorMenuItem8" 
+        -italicized 0
+        -boldFont 1
+        menuEditorMenuItem8;
+
+    menuItem
+        -label "Fill Hole" 
+        -divider 0
+        -subMenu 0
+        -tearOff 0
+        -command "FillHole" 
+        -altModifier 0
+        -optionModifier 0
+        -commandModifier 0
+        -ctrlModifier 0
+        -shiftModifier 0
+        -optionBox 0
+        -enable 1
+        -data 0
+        -radialPosition "SW" 
+        -allowOptionBoxes 1
+        -postMenuCommandOnce 0
+        -enableCommandRepeat 1
+        -image "polyCloseBorder.png" 
+        -echoCommand 0
+        -annotation "Fill Hole" 
+        -italicized 0
+        -boldFont 1
+        menuEditorMenuItem9;
+
+    menuItem
+        -label "menuEditorMenuItem10" 
+        -divider 0
+        -subMenu 0
+        -tearOff 0
+        -altModifier 0
+        -optionModifier 0
+        -commandModifier 0
+        -ctrlModifier 0
+        -shiftModifier 0
+        -optionBox 1
+        -enable 1
+        -data 0
+        -allowOptionBoxes 1
+        -postMenuCommandOnce 0
+        -enableCommandRepeat 0
+        -annotation "menuEditorMenuItem10" 
+        -italicized 0
+        -boldFont 1
+        menuEditorMenuItem10;
+
+    menuItem
+        -label "Mirror Geometry" 
+        -divider 0
+        -subMenu 0
+        -tearOff 0
+        -command "MirrorPolygonGeometry" 
+        -altModifier 0
+        -optionModifier 0
+        -commandModifier 0
+        -ctrlModifier 0
+        -shiftModifier 0
+        -optionBox 0
+        -enable 1
+        -data 0
+        -radialPosition "SE" 
+        -allowOptionBoxes 1
+        -postMenuCommandOnce 0
+        -enableCommandRepeat 1
+        -image "polyMirrorGeometry.png" 
+        -echoCommand 0
+        -annotation "Mirror Geometry" 
+        -italicized 0
+        -boldFont 0
+        menuEditorMenuItem11;
+
+    menuItem
+        -divider 0
+        -subMenu 0
+        -tearOff 0
+        -command "MirrorPolygonGeometryOptions" 
+        -altModifier 0
+        -optionModifier 0
+        -commandModifier 0
+        -ctrlModifier 0
+        -shiftModifier 0
+        -optionBox 1
+        -enable 1
+        -data 0
+        -allowOptionBoxes 1
+        -postMenuCommandOnce 0
+        -enableCommandRepeat 0
+        -echoCommand 0
+        -italicized 0
+        -boldFont 0
+        menuEditorMenuItem12;
+
+    menuItem
+        -label "Insert Edge Loop Tool" 
+        -divider 0
+        -subMenu 0
+        -tearOff 0
+        -command "SplitEdgeRingTool" 
+        -altModifier 0
+        -optionModifier 0
+        -commandModifier 0
+        -ctrlModifier 0
+        -shiftModifier 0
+        -optionBox 0
+        -enable 1
+        -data 0
+        -radialPosition "E" 
+        -allowOptionBoxes 1
+        -postMenuCommandOnce 0
+        -enableCommandRepeat 1
+        -image "polySplitEdgeRing.png" 
+        -echoCommand 0
+        -annotation "Insert Edge Loop Tool" 
+        -italicized 0
+        -boldFont 0
+        menuEditorMenuItem13;
+
+    menuItem
+        -divider 0
+        -subMenu 0
+        -tearOff 0
+        -altModifier 0
+        -optionModifier 0
+        -commandModifier 0
+        -ctrlModifier 0
+        -shiftModifier 0
+        -optionBox 1
+        -enable 1
+        -data 0
+        -allowOptionBoxes 1
+        -postMenuCommandOnce 0
+        -enableCommandRepeat 0
+        -italicized 0
+        -boldFont 0
+        menuEditorMenuItem14;
+
+    menuItem
+        -label "Append to Polygon Tool" 
+        -divider 0
+        -subMenu 0
+        -tearOff 0
+        -command "setToolTo polyAppendFacetContext ; polyAppendFacetCtx -e -pc `optionVar -q polyKeepFacetsPlanar` polyAppendFacetContext" 
+        -altModifier 0
+        -optionModifier 0
+        -commandModifier 0
+        -ctrlModifier 0
+        -shiftModifier 0
+        -optionBox 0
+        -enable 1
+        -data 0
+        -radialPosition "NE" 
+        -allowOptionBoxes 1
+        -postMenuCommandOnce 0
+        -enableCommandRepeat 1
+        -image "polyAppendFacet.png" 
+        -echoCommand 0
+        -annotation "Append to Polygon Tool" 
+        -italicized 0
+        -boldFont 0
+        menuEditorMenuItem15;
+
+    menuItem
+        -divider 0
+        -subMenu 0
+        -tearOff 0
+        -command "setToolTo polyAppendFacetContext ; polyAppendFacetCtx -e -pc `optionVar -q polyKeepFacetsPlanar` polyAppendFacetContext; toolPropertyWindow" 
+        -altModifier 0
+        -optionModifier 0
+        -commandModifier 0
+        -ctrlModifier 0
+        -shiftModifier 0
+        -optionBox 1
+        -enable 1
+        -data 0
+        -allowOptionBoxes 1
+        -postMenuCommandOnce 0
+        -enableCommandRepeat 0
+        -echoCommand 0
+        -italicized 0
+        -boldFont 0
+        menuEditorMenuItem16;
+
+setParent -m ..;
+
