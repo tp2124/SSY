@@ -3,6 +3,7 @@
 *.sdf
 *.suo
 *.tss
+*.pyc
 src/Debug*
 src/Release*
 src/ipch*
