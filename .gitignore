@@ -9,3 +9,5 @@ src/Release*
 src/ipch*
 src/SSYLib/Release*
 src/SSYLib/Debug*
+readme.textile
+.svn/
