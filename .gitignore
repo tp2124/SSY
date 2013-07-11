@@ -4,10 +4,10 @@
 *.suo
 *.tss
 *.pyc
-src/Debug*
-src/Release*
-src/ipch*
-src/SSYLib/Release*
-src/SSYLib/Debug*
+src/Debug/
+src/Release/
+src/ipch/
+src/SSYLib/Release/
+src/SSYLib/Debug/
 readme.textile
 .svn/
