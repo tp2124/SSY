@@ -23,7 +23,7 @@
 
 *.ipch
 *.filters
-*.vcxproj*
+*.vcxproj.*
 *.cache
 src/Debug/
 
