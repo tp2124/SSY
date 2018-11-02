@@ -1,8 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_DX11|Win32">
+      <Configuration>Debug_DX11</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_DX11|Win32">
+      <Configuration>Release_DX11</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|Win32">
@@ -13,18 +21,34 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{75787FF7-E07A-4212-AB08-B1F5C6A77E8E}</ProjectGuid>
     <RootNamespace>ssyLib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -32,26 +56,65 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(GL_DIR)\Include\glm-0.9.4.0\;$(GL_DIR)\Include\glfw-2.7.6\include\;$(GL_DIR)\Include\glew-1.9.0\include\;$(GL_DIR)\Include\bullet-2.81-rev2613\;$(GL_DIR)\Include\assimp-3.0.1270\include\;$(GL_DIR)\Include\AntTweakBar-1.16\include\;$(Include);$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)SSYLib\3rdParty\OpenGL\glew-1.9.0\include\;$(SolutionDir)SSYLib\3rdParty\OpenGL\glfw-2.7.6\include\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'">
+    <IncludePath>$(DXSDK_DIR)\Include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LibraryPath>$(GL_DIR)\Debug;$(Library);$(LibraryPath)</LibraryPath>
-    <ExecutablePath>$(GL_DIR)\Debug;$(ExecutablePath)</ExecutablePath>
+    <LibraryPath>$(SolutionDir)SSYLib\3rdParty\OpenGL\bin;$(Library);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(SolutionDir)SSYLib\3rdParty\OpenGL\bin;$(ExecutablePath)</ExecutablePath>
+    <OutDir>$(SolutionDir)SSYLib\libs\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'">
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(Library);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(DXSDK_DIR)Include;$(ExecutablePath)</ExecutablePath>
+    <OutDir>$(SolutionDir)SSYLib\libs\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINDLL;WIN32;_WINDOWS;_DEBUG;RENDER_OPENGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)SSYLib\3rdParty\OpenGL\Cg\include;$(SolutionDir)SSYLib\libs;$(SolutionDir)SSYLib\3rdParty\OpenGL\glut-3.7.6-bin;$(SolutionDir)SSYLib\3rdParty\OpenGL\glew-1.9.0\include;$(SolutionDir)SSYLib\3rdParty\OpenGL\glfw-2.7.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)SSYLib\libs</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>UNICODE;_WINDLL;WIN32;_WINDOWS;_DEBUG;RENDER_DX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DXSDK_DIR)Include;$(SolutionDir)SSYLib\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)SSYLib\libs</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -59,6 +122,22 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>RENDER_OPENGL;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>UNICODE;_WINDLL;WIN32;_WINDOWS;RENDER_DX;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DXSDK_DIR)Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -77,11 +156,19 @@
     <ClInclude Include="Events\Types\SSYDefaultEvent.h" />
     <ClInclude Include="Events\Types\World\Graphics\SSYGraphicsWorldEvent.h" />
     <ClInclude Include="GO\SSYGO.h" />
+    <ClInclude Include="Graphics\DX11Res\DX11Defs.h" />
     <ClInclude Include="Managers\SSYGOManager.h" />
     <ClInclude Include="Managers\SSYGraphicsManager.h" />
+    <ClInclude Include="Math\matrix3.h" />
+    <ClInclude Include="Math\matrix4.h" />
+    <ClInclude Include="Math\plane.h" />
+    <ClInclude Include="Math\quaternion.h" />
+    <ClInclude Include="Math\vector3.h" />
+    <ClInclude Include="Math\vector4.h" />
     <ClInclude Include="Sys\dbg_assert.h" />
     <ClInclude Include="Sys\def_dbg.h" />
     <ClInclude Include="Sys\SSYDefines.h" />
+    <ClInclude Include="Sys\SSY_float.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Components\Controller\SSYControllerComponent.cpp" />
@@ -95,7 +182,14 @@
     <ClCompile Include="GO\SSYGO.cpp" />
     <ClCompile Include="Managers\SSYGOManager.cpp" />
     <ClCompile Include="Managers\SSYGraphicsManager.cpp" />
+    <ClCompile Include="Math\matrix3.cpp" />
+    <ClCompile Include="Math\matrix4.cpp" />
+    <ClCompile Include="Math\plane.cpp" />
+    <ClCompile Include="Math\quaternion.cpp" />
+    <ClCompile Include="Math\vector3.cpp" />
+    <ClCompile Include="Math\vector4.cpp" />
     <ClCompile Include="Sys\dbg_assert.cpp" />
+    <ClCompile Include="Sys\SSY_float.cpp" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

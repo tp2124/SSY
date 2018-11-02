@@ -3,19 +3,18 @@
 
 #define WIN32_LEAN_AND_MEAN
 #include "../Containers/singleton.h"
+#include "../Sys/def_dbg.h"
 #include <stdio.h>
-//#include "../core/math.h"
-//#include "../game/Camera.h"
-#ifdef RENDER_DX
-#include <set>
-#include <d3d9.h>
-#include <d3dx9math.h>
-#else ifdef RENDER_OPENGL
-// Include GLEW
-#include <glew.h>
+#include <windows.h>
 
-// Include GLFW
-#include <glfw.h>
+#ifdef RENDER_DX
+#include <d3d11.h>
+#include <d3dx11.h>
+#include "../Graphics/DX11Res/DX11Defs.h"
+#include <WinUser.h>
+#else ifdef RENDER_OPENGL
+#include <GL/glu.h>
+#include <GL/glut.h>
 #endif
 
 namespace SSY
@@ -31,7 +30,20 @@ public:
 #ifdef RENDER_DX
 	// Sets up our D3D device to the passed window.
 	// Make sure you assert that the D3D device initialized.
-	int Setup(HWND hWnd);
+	HINSTANCE               g_hInst;
+	HWND                    g_hWnd;
+	D3D_DRIVER_TYPE         g_driverType;
+	D3D_FEATURE_LEVEL       g_featureLevel;
+	ID3D11Device*           g_pd3dDevice;
+	ID3D11DeviceContext*    g_pImmediateContext;
+	IDXGISwapChain*         g_pSwapChain;
+	ID3D11RenderTargetView* g_pRenderTargetView;
+
+	HRESULT Initialize();
+
+	HRESULT Setup(HINSTANCE hInstance, int nCmdShow);
+
+	LRESULT CALLBACK WndProc( HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam );
 
 	// Releases all D3D resources
 	void Cleanup();
@@ -62,24 +74,18 @@ public:
 #endif
 protected:
 #ifdef RENDER_DX
-	// Default constructor does nothing other than set some pointers to 0
-	GraphicsDevice()
-		: m_pD3D(0)
-		, m_pDevice(0)
-	{ }
+	SSYGraphicsManager()
+	{
+		g_hInst = NULL;
+		g_hWnd = NULL;
+		g_driverType = D3D_DRIVER_TYPE_NULL;
+		g_featureLevel = D3D_FEATURE_LEVEL_11_0;
+		g_pd3dDevice = NULL;
+		g_pImmediateContext = NULL;
+		g_pSwapChain = NULL;
+		g_pRenderTargetView = NULL;
+	};
 
-	
-
-	// Direct3D9 interface pointer
-	//LPDIRECT3D9 m_pD3D;
-	// Direct3D9 device pointer
-	//LPDIRECT3DDEVICE9 m_pDevice;
-
-	// Set of all active MeshComponents
-	//std::set<MeshComponent*> m_MeshComponentSet;
-
-	// set of all point lights
-	//std::set<PointLight*> m_PointLightSet;
 #else ifdef RENDER_OPENGL
 	SSYGraphicsManager()
 	{

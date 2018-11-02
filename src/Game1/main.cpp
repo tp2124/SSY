@@ -8,18 +8,17 @@ author: Travis Primm
 #include <stdio.h>
 #include "..\ssyLib\Sys\ssyDefines.h"
 #include "..\ssyLib\Managers\SSYGraphicsManager.h"
+//# include <wglext.h>
+//# include <GL/glu.h>
 
-#ifdef RENDER_OPENGL
 int main(int argc, char **argv)
 {
 	//Parse cmd args
 
 
-
-
 	bool bQuitGame = false;
 
-	SSY::SSYGraphicsManager::get().Setup();
+	//SSY::SSYGraphicsManager::get().Setup();
 
 	do
 	{
@@ -27,7 +26,6 @@ int main(int argc, char **argv)
 	}while(!bQuitGame);
 }
 
-#endif
 
 
 

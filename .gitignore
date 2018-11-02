@@ -1,30 +1,12 @@
-*.opensdf
-*.sdf
-*.sdf
-*.suo
-*.tss
-*.pyc
-*.ilk
-*.tlog
-*.pdb
-*.idb
-*.log
-*.tlog
-*.lastbuildstate
-*.obj
-
-*.ipch
-*.filters
-*.vcxproj.*
-*.cache
-Debug*/
+Release/
+ipch/
 Release*/
-
-readme.textile
+Debug*/
 
 .svn/
-
 .vs/
+
+*.textile
 
 # Prerequisites
 *.d
