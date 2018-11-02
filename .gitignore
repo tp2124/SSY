@@ -5,6 +5,7 @@ Debug*/
 
 .svn/
 .vs/
+*.vcxproj.*
 
 *.textile
 
